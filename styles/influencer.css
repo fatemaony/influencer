@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header{
+  margin:80px 120px;
+}
+/* shared styles */
+.display-flex{
+  display: flex;
+}
+.items{
+  list-style: none;
+  gap: 25px;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3A3A3A;
+}
+.nav-bar{
+  justify-content: space-between;
+}
+.influencer-title{
+  font-size: 1.85rem;
+  font-weight: 700;
+}
+/* section freebook now */
+.freebook{
+  margin:0 120px;
+}
+.freebook-container{
+ width: 585px;
+}
+.freebook-main{
+  justify-content: space-between;
+}
+.main-camera{
+  background-image: url(../images/Circle\ design.svg) ;
+  background-repeat: no-repeat;
+  border: 5px;
+  padding: 30px;
+}
+.freebook-title{
+  font-size: 3.37rem;
+}
+.main-camera img{
+  width: 100%;
+  justify-content: center;
+}
+.freebook-description{
+  font-size: 1rem;
+  font-weight: 600;
+}
+.freebook-now{
+  border-radius: 41px;
+background: #E02C6D;
+padding: 10px 24px;
+border: none;
+}
+/* sponsors logo */
+.sponsors-logo{
+  margin: 80px 150px;
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+}
+/* card section */
+#card-section{
+  margin:30px 210px;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+.card-title{
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  padding: 30px;
+}
+.card-items{ 
+  width:300px ;
+  border-radius: 5px;
+background: #FFF;
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+padding: 10px;
+}
+/* responsive for small device */
+@media screen and (max-width:576px) {
+  .nav-bar,.items ,.freebook-main{
+   display: grid;
+   grid-template-columns: 1fr;
+   align-items: center;
+   gap: 5px;
+  }
+  .freebook-container{
+    width: 350px;
+   }
+   .freebook{
+    margin: 20px;
+   }
+   .main-camera{
+   background: none;
+   }
+   .sponsors-logo{
+    margin:10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+  
+  }
+  
+}
+
+/* responsive for medium device */
+@media screen and (min-width:576px) and (max-width:991px) {
+  .nav-bar,.items{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    align-items: center;
+    gap: 5px;
+   }
+   .main-camera{
+    background: none;
+    }
+  .sponsors-logo{
+      margin:60px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 5px;
+    }
+    .freebook-title{
+      font-size: 2.75rem;
+    }
+    #card-section{
+       margin: 30px;
+    }
+    .cards{
+      grid-template-columns: repeat(2,1fr);
+    }
+}
