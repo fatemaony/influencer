@@ -63,6 +63,8 @@ a{
 background: #E02C6D;
 padding: 10px 24px;
 border: none;
+color: #FFF;
+
 }
 /* sponsors logo */
 .sponsors-logo{
@@ -92,9 +94,50 @@ background: #FFF;
 box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 padding: 10px;
 }
+.see-more{
+  color: rgba(224, 44, 109, 0.87);
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: right;
+  padding-top: 20px;
+  padding-right: 50px;
+}
+/* join section */
+.join-section{
+  margin: 20px 165px;
+}
+.join-now-container{
+  justify-content: space-around;
+}
+.join-main{
+  width: 600px;
+}
+.join-title{
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #0A0826;
+}
+.join-description{
+  color: #6C6C6C;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.join-now-button{
+  border-radius: none;
+  background: #E02C6D;
+  font-size: 1rem;
+  font-weight: 700;
+padding: 10px 24px;
+border: none;
+color: #FFF;
+}
 /* responsive for small device */
 @media screen and (max-width:576px) {
-  .nav-bar,.items ,.freebook-main{
+  .nav-bar,
+  .items ,
+  .freebook-main,
+  .cards,
+  .join-now-container{
    display: grid;
    grid-template-columns: 1fr;
    align-items: center;
@@ -112,16 +155,35 @@ padding: 10px;
    .sponsors-logo{
     margin:10px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 5px;
   
   }
-  
+  #card-section{
+    margin: 10px 40px;
+  }
+  .freebook-now,.join-now-button{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   margin: 5px 20px;
+  }
+  .join-section{
+    margin: 20px 20px;
+    padding: 20px 20px;
+  }
+  .join-main{
+    width: 350px;
+  }
+  .join-img{
+    width: 100%;
+  }
+
 }
 
 /* responsive for medium device */
 @media screen and (min-width:576px) and (max-width:991px) {
-  .nav-bar,.items{
+  .nav-bar,.items,.cards{
     display: grid;
     grid-template-columns:repeat(2, 1fr);
     align-items: center;
@@ -140,9 +202,17 @@ padding: 10px;
       font-size: 2.75rem;
     }
     #card-section{
-       margin: 30px;
+       margin: 10px;
+       gap: 5px;
     }
-    .cards{
-      grid-template-columns: repeat(2,1fr);
-    }
+   .join-section{
+    margin:30px 20px;
+   }
+   .join-main{
+    width: 250px;
+   }
+   .join-img-div{
+    align-items: center;
+    margin-top: 70px;
+   }
 }
